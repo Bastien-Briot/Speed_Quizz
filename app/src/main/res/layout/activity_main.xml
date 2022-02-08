@@ -58,16 +58,14 @@
         android:layout_gravity="center"
         android:orientation="vertical">
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/main_text_style"
-            android:visibility="gone">
+            style="@style/main_text_style">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/main_text_player1"
                 style="@style/main_text_style2"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/main_text_style"
-            android:visibility="gone">
+            style="@style/main_text_style">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/main_text_player2"
                 style="@style/main_text_style2"/>
@@ -81,7 +79,6 @@
         android:layout_gravity="center">
         <Button
             android:layout_width="wrap_content"
-            android:visibility="gone"
             android:layout_height="wrap_content"
             android:id="@+id/BTN_Commencer"
             app:iconTint="@color/colorAccent"

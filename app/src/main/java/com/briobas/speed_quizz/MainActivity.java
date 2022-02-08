@@ -17,19 +17,21 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    Button BTN_Ajouter, BTN_Commencer;
+    EditText Player1, Player2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button BTN_Ajouter = findViewById(R.id.BTN_Add);
-        Button BTN_Commencer = findViewById(R.id.BTN_Commencer);
-        EditText Player1 = findViewById(R.id.main_text_player1);
-        EditText Player2 = findViewById(R.id.main_text_player2);
-
+        BTN_Ajouter = findViewById(R.id.BTN_Add);
+        BTN_Commencer = findViewById(R.id.BTN_Commencer);
+        Player1 = findViewById(R.id.main_text_player1);
+        Player2 = findViewById(R.id.main_text_player2);
         Toolbar mainToolbar = findViewById(R.id.main_toolbar);
         setSupportActionBar(mainToolbar);
+        HideButton();
 
         BTN_Ajouter.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -87,5 +89,10 @@ public class MainActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
         return true;
+    }
+    public void HideButton() {
+        BTN_Commencer.setVisibility(View.GONE);
+        Player1.setVisibility(View.GONE);
+        Player2.setVisibility(View.GONE);
     }
 }
