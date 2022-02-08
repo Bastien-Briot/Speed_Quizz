@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_title_size">30sp</dimen>
+    <dimen name="main_margin_top">30dp</dimen>
+    <dimen name="main_margin_end">60dp</dimen>
+    <dimen name="main_margin_start">60dp</dimen>
+    <dimen name="main_text_size">15sp</dimen>
+    <dimen name="main_elevation">5dp</dimen>
+    <dimen name="main_iconSize">20dp</dimen>
+</resources>

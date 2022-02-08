@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Speed Quizz</string>
+    <string name="menu_action_question">Question</string>
+    <string name="menu_action_settings">Paramètres</string>
+    <string name="main_add_button">Ajouter un joueur</string>
+    <string name="main_text_player">Joueur</string>
+    <string name="main_btn_start">Commencez la partie</string>
+</resources>
