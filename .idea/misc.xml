@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/briobas/AndroidStudioProjects/Speed_Quizz/app/src/main/res/drawable-anydpi/ic_action_name.xml" value="0.3828125" />
-        <entry key="..\:/Users/briobas/AndroidStudioProjects/Speed_Quizz/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/briobas/AndroidStudioProjects/Speed_Quizz/app/src/main/res/layout-land/activity_game.xml" value="0.31040564373897706" />
+        <entry key="..\:/Users/briobas/AndroidStudioProjects/Speed_Quizz/app/src/main/res/layout/activity_game.xml" value="0.25" />
+        <entry key="..\:/Users/briobas/AndroidStudioProjects/Speed_Quizz/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/briobas/AndroidStudioProjects/Speed_Quizz/app/src/main/res/menu/main_menu.xml" value="0.36666666666666664" />
       </map>
     </option>

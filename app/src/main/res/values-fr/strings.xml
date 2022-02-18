@@ -6,4 +6,7 @@
     <string name="main_add_button">Ajouter un joueur</string>
     <string name="main_text_player">Joueur</string>
     <string name="main_btn_start">Commencez la partie</string>
+    <string name="game_btn_restart">Rejouer</string>
+    <string name="game_btn_menu">Menu</string>
+    <string name="name">Nom</string>
 </resources>

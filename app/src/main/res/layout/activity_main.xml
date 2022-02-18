@@ -21,6 +21,7 @@
                 android:background="@color/colorPrimary"
                 app:titleTextColor="#FFF"
                 android:id="@+id/main_toolbar"
+
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:elevation="5dp"
@@ -40,11 +41,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/BTN_Add"
+            app:icon="@drawable/add"
             app:iconTint="@color/colorAccent"
             android:text="@string/main_add_button"
             android:textSize="@dimen/main_text_size"
             style="@style/Widget.Material3.Button.ElevatedButton.Icon"
-            app:icon="@drawable/add"
             app:iconSize="@dimen/main_iconSize"
             android:textColor="@color/colorAccent"
             app:elevation="@dimen/main_elevation"
@@ -58,14 +59,16 @@
         android:layout_gravity="center"
         android:orientation="vertical">
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/main_text_style">
+            style="@style/main_text_style"
+            app:startIconDrawable="@drawable/ic_person">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/main_text_player1"
                 style="@style/main_text_style2"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/main_text_style">
+            style="@style/main_text_style"
+            app:startIconDrawable="@drawable/ic_person">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/main_text_player2"
                 style="@style/main_text_style2"/>

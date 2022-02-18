@@ -33,12 +33,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(mainToolbar);
         HideButton();
 
-        BTN_Ajouter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Player1.setVisibility(View.VISIBLE);
-            }
-        });
+        BTN_Ajouter.setOnClickListener(v -> Player1.setVisibility(View.VISIBLE));
         Player1.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {}
@@ -65,7 +60,15 @@ public class MainActivity extends AppCompatActivity {
                 BTN_Commencer.setVisibility(View.VISIBLE);
             }
         });
-
+        BTN_Commencer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent gameActivity = new Intent(MainActivity.this, GameActivity.class);
+                gameActivity.putExtra("Player1", Player1.getText().toString());
+                gameActivity.putExtra("Player2", Player2.getText().toString());
+                MainActivity.this.startActivity(gameActivity);
+            }
+        });
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -80,9 +83,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()) {
             case R.id.action_favorite:
-                break;
             case R.id.action_settings:
-                break;
             case R.id.action_question:
                 break;
             default:

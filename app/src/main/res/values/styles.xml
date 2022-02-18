@@ -16,7 +16,6 @@
         <item name="hintTextColor">@color/colorPrimary</item>
         <item name="hintTextAppearance">@style/main_text_appareance</item>
         <item name="android:paddingBottom">8dp</item>
-        <item name="startIconDrawable">@drawable/ic_person</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_marginEnd">@dimen/main_margin_end</item>

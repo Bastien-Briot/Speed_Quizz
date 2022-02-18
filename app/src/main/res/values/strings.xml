@@ -6,4 +6,7 @@
     <string name="main_add_button">Add a player</string>
     <string name="main_text_player">player</string>
     <string name="main_btn_start">Start the game</string>
+    <string name="game_btn_restart">Restart</string>
+    <string name="game_btn_menu">Menu</string>
+    <string name="name">Name</string>
 </resources>
