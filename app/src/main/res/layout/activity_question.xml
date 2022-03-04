@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".QuestionActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Question"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardNbrQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="Widget.Material3.CardView.Elevated"
+        android:elevation="10dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outlinedTextField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Question"
+                app:startIconDrawable="@drawable/ic_question"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Vrais ou Faux"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp">
+        <Button
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            android:id="@+id/BTN_AnulerQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/annuler"
+            android:textSize="15sp"
+            android:layout_marginStart="25dp"
+            app:icon="@drawable/ic_cancel"
+            app:iconTint="@color/colorAccent"
+            app:backgroundTint="@color/Beige" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/BTN_EnregistrerQuestion"
+            app:iconTint="@color/colorAccent"
+            android:text="@string/enregistrer"
+            android:textSize="@dimen/main_text_size"
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            app:icon="@drawable/ic_save"
+            android:layout_marginStart="55dp"
+            app:iconSize="@dimen/main_iconSize"
+            android:textColor="@color/colorAccent"
+            app:elevation="@dimen/main_elevation"
+            app:backgroundTint="@color/Beige" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

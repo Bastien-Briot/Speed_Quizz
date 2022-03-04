@@ -9,4 +9,10 @@
     <string name="game_btn_restart">Rejouer</string>
     <string name="game_btn_menu">Menu</string>
     <string name="name">Nom</string>
+    <string name="Score">0</string>
+    <string name="Question">Question</string>
+    <string name="annuler">Annuler</string>
+    <string name="nbr_de_question">Nbr de question</string>
+    <string name="time_bettwen_each_question">Durée entre chaque question</string>
+    <string name="enregistrer">Enregistrer</string>
 </resources>

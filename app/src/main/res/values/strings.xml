@@ -9,4 +9,10 @@
     <string name="game_btn_restart">Restart</string>
     <string name="game_btn_menu">Menu</string>
     <string name="name">Name</string>
+    <string name="Score">0</string>
+    <string name="Question">Question</string>
+    <string name="annuler">Cancel</string>
+    <string name="nbr_de_question">Number of question</string>
+    <string name="time_bettwen_each_question">Time between each question</string>
+    <string name="enregistrer">Save</string>
 </resources>

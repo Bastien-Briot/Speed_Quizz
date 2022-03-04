@@ -14,7 +14,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     Button BTN_Ajouter, BTN_Commencer;
@@ -60,14 +59,11 @@ public class MainActivity extends AppCompatActivity {
                 BTN_Commencer.setVisibility(View.VISIBLE);
             }
         });
-        BTN_Commencer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent gameActivity = new Intent(MainActivity.this, GameActivity.class);
-                gameActivity.putExtra("Player1", Player1.getText().toString());
-                gameActivity.putExtra("Player2", Player2.getText().toString());
-                MainActivity.this.startActivity(gameActivity);
-            }
+        BTN_Commencer.setOnClickListener(view -> {
+            Intent gameActivity = new Intent(MainActivity.this, GameActivity.class);
+            gameActivity.putExtra("Player1", Player1.getText().toString());
+            gameActivity.putExtra("Player2", Player2.getText().toString());
+            MainActivity.this.startActivity(gameActivity);
         });
     }
 
@@ -82,15 +78,19 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()) {
-            case R.id.action_favorite:
             case R.id.action_settings:
+                Intent settingsActivity = new Intent(MainActivity.this, SettingsActivity.class);
+                MainActivity.this.startActivity(settingsActivity);
             case R.id.action_question:
+                Intent questionActivity = new Intent(MainActivity.this, QuestionActivity.class);
+                MainActivity.this.startActivity(questionActivity);
                 break;
             default:
                 return super.onOptionsItemSelected(item);
         }
         return true;
     }
+
     public void HideButton() {
         BTN_Commencer.setVisibility(View.GONE);
         Player1.setVisibility(View.GONE);

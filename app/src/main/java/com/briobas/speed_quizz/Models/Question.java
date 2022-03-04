@@ -14,6 +14,12 @@ public class Question {
         this.reponse = reponse;
     }
 
+    // Curseur = tableau
+    public Question(Cursor cursor){
+        question = cursor.getString(cursor.getColumnIndexOrThrow("question"));
+        reponse = cursor.getInt(cursor.getColumnIndexOrThrow("reponse"));
+    }
+
     public String getQuestion() { return question; }
 
     public int isReponse() {

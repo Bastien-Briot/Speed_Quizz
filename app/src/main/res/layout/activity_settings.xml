@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paramètres"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="Widget.Material3.CardView.Elevated"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time_bettwen_each_question"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginBottom="-10dp"/>
+            <com.google.android.material.slider.Slider
+                android:layout_gravity="center"
+                android:id="@+id/slider"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:value="3"
+                android:valueFrom="1"
+                android:stepSize="1"
+                android:valueTo="5" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardNbrQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="Widget.Material3.CardView.Elevated"
+        android:elevation="10dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nbr_de_question"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="-10dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="180dp"
+                android:layout_marginBottom="25dp"
+                app:startIconDrawable="@drawable/ic_question"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/NbreQuestion"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:text="0"
+                    android:layout_height="wrap_content"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp">
+        <Button
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            android:id="@+id/BTN_Anuler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/annuler"
+            android:textSize="15sp"
+            android:layout_marginStart="25dp"
+            app:icon="@drawable/ic_cancel"
+            app:iconTint="@color/colorAccent"
+            app:backgroundTint="@color/Beige" />
+
+        <Button
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            android:id="@+id/BTN_Enregistrer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enregistrer"
+            android:textSize="15sp"
+            android:layout_marginStart="55dp"
+            app:icon="@drawable/ic_save"
+            app:iconTint="@color/colorAccent"
+            app:backgroundTint="@color/Beige" />
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
